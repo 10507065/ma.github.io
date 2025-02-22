@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Costos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Costos</h1>
+        <label>Costo Actual ($):</label>
+        <input type="number" id="currentCost" step="0.01" placeholder="Ej: 100">
+
+        <label>Inflación (%):</label>
+        <input type="number" id="inflation" step="0.01" placeholder="Ej: 5">
+
+        <label>Aumento Materia Prima (%):</label>
+        <input type="number" id="materialIncrease" step="0.01" placeholder="Ej: 8 (opcional)">
+
+        <label>Devaluación Moneda (%):</label>
+        <input type="number" id="exchangeRate" step="0.01" placeholder="Ej: 3 (opcional)">
+
+        <button onclick="calculateCost()">Calcular</button>
+
+        <h2>Resultado:</h2>
+        <p id="result">Ingresa los datos y presiona "Calcular".</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
